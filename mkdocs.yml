@@ -1,0 +1,55 @@
+site_name: artbyg
+site_description: 'lartdelavie'
+site_url: https://gamze-ux.github.io/try/
+repo_url: https://github.com/Gamze-ux/try
+
+
+theme:
+    name: material
+    logo: img/Bildmarke_Weiss.svg
+    favicon: img/favicon.ico
+    font:
+        text: Figtree
+    features:
+        - navigation.footer
+        - navigation.instant
+        - navigation.instant.prefetch
+        - navigation.instant.progress
+        - navigation.tracking
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.top
+        - content.tabs.link
+        - content.action.edit
+        - toc.integrate
+        - content.code.copy
+        - navigation.instant
+        - navigation.sections
+        - i18n
+
+plugins:
+    - glightbox:
+        draggable: false
+    - search
+    - social:
+        cards_layout_options:
+            background_color: "#111111"
+            color: "#E4B854"
+            font_family: Figtree
+    - neoteroi.mkdocsoad:
+        use_pymdownx: true
+    - search
+    - i18n:
+      default_language: de
+      languages:
+        de: Deutsch
+        fr: Français
+        en: English
+
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/artlandgd/
+  
