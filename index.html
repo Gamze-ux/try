@@ -1,81 +1,54 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Animation GitHub Pages</title>
-  <style>
-    .color-box {
-      width: 100px;
-      height: 100px;
-      background-color: blue;
-      animation: changeColor 3s infinite alternate;
-      margin: 50px auto;
-    }
-
-    @keyframes changeColor {
-      0% { background-color: blue; }
-      100% { background-color: red; }
-    }
-  </style>
-</head>
-<body>
-  <div class="color-box"></div>
-</body>
-</html>
-
-
-<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>DUMAN</title>
+  <title>Gulluzar Recai Duman</title>
   <style>
     body {
-      background-color: #000;
+      background: #0b0b0b;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      font-family: 'Arial Black', sans-serif;
     }
 
-    .letter {
-      font-size: 6rem;
-      font-family: 'Impact', sans-serif;
-      margin: 0 10px;
-      animation: glow 2s ease-in-out infinite alternate,
-                 rotate 4s linear infinite;
-      display: inline-block;
-      transform-origin: center;
+    .name {
+      text-align: center;
+      font-size: 4.5rem;
+      letter-spacing: 5px;
+      animation: pulse 4s infinite ease-in-out;
     }
 
-    .d { color: #FF3CAC; }
-    .u { color: #784BA0; }
-    .m { color: #2B86C5; }
-    .a { color: #24FE41; }
-    .n { color: #F9D423; }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 10px #fff, 0 0 20px currentColor, 0 0 30px currentColor;
-      }
-      to {
-        text-shadow: 0 0 20px #fff, 0 0 40px currentColor, 0 0 60px currentColor;
-      }
+    .gulluzar {
+      color: #FF3CAC;
+      text-shadow: 0 0 20px #FF3CACaa, 0 0 40px #FF3CAC55;
     }
 
-    @keyframes rotate {
-      from { transform: rotate(0deg) scale(1); }
-      to { transform: rotate(360deg) scale(1.05); }
+    .recai {
+      color: #2B86C5;
+      text-shadow: 0 0 20px #2B86C5aa, 0 0 40px #2B86C555;
+    }
+
+    .duman {
+      color: #24FE41;
+      text-shadow: 0 0 20px #24FE41aa, 0 0 40px #24FE4155;
+    }
+
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <div>
-    <span class="letter d">D</span>
-    <span class="letter u">U</span>
-    <span class="letter m">M</span>
-    <span class="letter a">A</span>
-    <span class="letter n">N</span>
+  <div class="name">
+    <span class="gulluzar">GULLUZAR</span>  
+    <span class="recai">RECAI</span>  
+    <span class="duman">DUMAN</span>
   </div>
 </body>
 </html>
