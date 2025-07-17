@@ -2,53 +2,33 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Gulluzar Recai Duman</title>
+  <title>ART BY G</title>
   <style>
     body {
-      background: #0b0b0b;
       margin: 0;
-      padding: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Arial Black', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Segoe UI', sans-serif;
     }
 
-    .name {
-      text-align: center;
-      font-size: 4.5rem;
-      letter-spacing: 5px;
-      animation: pulse 4s infinite ease-in-out;
+    h1 {
+      font-size: 6rem;
+      color: white;
+      text-shadow: 0 0 10px #ffb6c1, 0 0 20px #f06;
+      animation: pop 2s ease-in-out infinite alternate;
     }
 
-    .gulluzar {
-      color: #FF3CAC;
-      text-shadow: 0 0 20px #FF3CACaa, 0 0 40px #FF3CAC55;
-    }
-
-    .recai {
-      color: #2B86C5;
-      text-shadow: 0 0 20px #2B86C5aa, 0 0 40px #2B86C555;
-    }
-
-    .duman {
-      color: #24FE41;
-      text-shadow: 0 0 20px #24FE41aa, 0 0 40px #24FE4155;
-    }
-
-    @keyframes pulse {
-      0%   { transform: scale(1); }
-      50%  { transform: scale(1.05); }
-      100% { transform: scale(1); }
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
     }
   </style>
 </head>
 <body>
-  <div class="name">
-    <span class="gulluzar">GULLUZAR</span>  
-    <span class="recai">RECAI</span>  
-    <span class="duman">DUMAN</span>
-  </div>
+  <h1>Bienvenue !</h1>
 </body>
 </html>
+
